@@ -29,7 +29,7 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['about-vignxs.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -128,9 +128,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
