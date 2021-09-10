@@ -1,6 +1,4 @@
-body{
-    background-color:#6c6d8a!important;
-}
+
 
 #profile-wrapper{
     text-align: center;
@@ -32,4 +30,36 @@ body{
 .card:hover{
     transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* responsive */
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container{
+        background-color: #3e4685;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container{
+        background-color: #ddd5fc;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        background-color: #c1bffa;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container{
+        background-color: #69bcfc;
+    }
 }
