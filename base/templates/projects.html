@@ -1,0 +1,402 @@
+<!-- main/templates/main/projects.html -->
+
+{% include 'nav.html' %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+    {% load static %}
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="mb-4">My Projects</h2>
+      <div class="accordion" id="projectsAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                IntelliReader | 2024
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <div class="imgbox">
+                <img
+                  src="{% static 'images/ir.png' %}"
+                  alt="Project 1"
+                  class="img-fluid mb-3"
+                />
+              </div>
+              <p>
+                Designed and developed the AskPDF tool, utilizing LangChain
+                powered by OpenAI GPT-4 and Pgvector. Engineered a solution to
+                convert scanned PDFs into text-based PDFs using AWS Textract and
+                PyMuPDF. Built a full-stack web application with Django REST
+                framework for the backend and React JS with TypeScript for the
+                frontend.
+                <a href="https://intellipdfreader.com/"> Website</a>
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-secondary"
+                  >Django REST</span
+                >
+
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-primary">TypeScript</span>
+                <span class="badge badge-pill badge-secondary">PostgreSQL</span>
+                <span class="badge badge-pill badge-warning"
+                  >Github Actions</span
+                >
+                <span class="badge badge-pill badge-secondary">LangChain</span>
+                <span class="badge badge-pill badge-danger"> AWS Textract</span>
+                <span class="badge badge-pill badge-secondary">OpenAI</span>
+                <span class="badge badge-pill badge-warning">GPT4</span>
+                <span class="badge badge-pill badge-danger">PG Vector</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ThreeFacts | 2023
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <img
+                src="{% static 'images/threefacts.png' %}"
+                alt="Project 2"
+                class="img-fluid mb-3"
+              />
+              <p>
+                To know Three Facts about anything and Backed up by GPT Models.
+                I developed the "Three Facts" application using Langchain and
+                OpenAI technologies. Integrated JWT with token features, and
+                implemented the application on React and Material-UI, ensuring a
+                secure and user-friendly experience.
+                <a href="https://threefacts.vercel.app/"> Website</a>
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-primary">Django REST</span>
+
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-primary">JavaScript</span>
+                <span class="badge badge-pill badge-secondary">PostgreSQL</span>
+                <span class="badge badge-pill badge-warning"
+                  >Github Actions</span
+                >
+                <span class="badge badge-pill badge-primary">JWT</span>
+                <span class="badge badge-pill badge-danger">OpenAI</span>
+                <span class="badge badge-pill badge-primary">LangChain</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTheadingThree"
+                aria-expanded="false"
+                aria-controls="collapseTheadingThree"
+              >
+                BMI Tracker| 2023
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseTheadingThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <img
+                src="{% static 'images/BMI.png' %}"
+                alt="Project 2"
+                class="img-fluid mb-3"
+              />
+              <p>
+                Designed a web application with React JS, TypeScript, and
+                Material-UI. Developed features JWT Auth, Account Level BMI
+                History, Cool and Clean UI.
+                <a href="https://bmi-calc-vignxs.vercel.app/"> Website</a>
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-secondary">Django</span>
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-primary">JavaScript</span>
+                <span class="badge badge-pill badge-secondary">PostgreSQL</span>
+                <span class="badge badge-pill badge-warning"
+                  >Github Actions</span
+                >
+                <span class="badge badge-pill badge-primary">JWT</span>
+                <span class="badge badge-pill badge-danger">DataGird</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFoheadingFour"
+                aria-expanded="false"
+                aria-controls="collapseFoheadingFour"
+              >
+                PropertyHub | 2022
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFoheadingFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <img
+                src="{% static 'images/propertyHub.png' %}"
+                alt="Project 2"
+                class="img-fluid mb-3"
+              />
+              <p>
+                Designed detailed wireframes using Figma and implemented a web
+                application with React JS, TypeScript, and Material-UI.
+                Developed advanced features including form validation,
+                pagination, and filtering. Created a management system using MUI
+                Data Grid for efficient data handling and interactive
+                functionalitie
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-secondary">Django</span>
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-primary">JavaScript</span>
+                <span class="badge badge-pill badge-secondary">PostgreSQL</span>
+                <span class="badge badge-pill badge-secondary"
+                  >Github Actions</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFoheadingFive"
+                aria-expanded="false"
+                aria-controls="collapseFoheadingFive"
+              >
+                EnquiryHub | 2022
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFoheadingFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <img
+                src="{% static 'images/enquiryHub.png' %}"
+                alt="Project 2"
+                class="img-fluid mb-3"
+              />
+              <p>
+                Designed and developed an intuitive inquiry management system
+                using MUI (Material-UI) and React JS. Implemented robust
+                functionalities for inquiry tracking and resolution management.
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-secondary">Django</span>
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-primary">JavaScript</span>
+                <span class="badge badge-pill badge-danger">PostgreSQL</span>
+                <span class="badge badge-pill badge-secondary">DataGird</span>
+
+                <span class="badge badge-pill badge-warning"
+                  >Github Actions</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                ECommerce | 2021
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseSix"
+            class="collapse"
+            aria-labelledby="headingSix"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <img
+                src="{% static 'images/ECOM.png' %}"
+                alt="Project 3"
+                class="img-fluid mb-3"
+              />
+              <hr />
+              <br />
+
+              <p>
+                Developed a web application using FastAPI, React JS and a
+                microservices architecture, leveraging Redis Streams for
+                real-time data processing and storage. Incorporated Chart.js to
+                visualize data, enabling dynamic updates and providing real-time
+                information to users.
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-secondary">Fast API</span>
+                <span class="badge badge-pill badge-success"
+                  >Microservices</span
+                >
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-info">Redis</span>
+                <span class="badge badge-pill badge-dark">JSON</span>
+                <span class="badge badge-pill badge-secondary">Chart.jsx</span>
+                <span class="badge badge-pill badge-info">Haversine</span>
+                <span class="badge badge-pill badge-primary">Events</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Django Portfolio | 2021
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#projectsAccordion"
+          >
+            <div class="card-body project-content">
+              <img
+                src="{% static 'images/portfolio.png' %}"
+                alt="Project 3"
+                class="img-fluid mb-3"
+              />
+              <hr />
+              <br />
+
+              <p>
+                Developed a web application using FastAPI, React JS and a
+                microservices architecture, leveraging Redis Streams for
+                real-time data processing and storage. Incorporated Chart.js to
+                visualize data, enabling dynamic updates and providing real-time
+                information to users.
+              </p>
+              <div class="mt-3">
+                <span class="badge badge-pill badge-primary">Python</span>
+                <span class="badge badge-pill badge-secondary">Fast API</span>
+                <span class="badge badge-pill badge-success"
+                  >Microservices</span
+                >
+                <span class="badge badge-pill badge-danger">React JS</span>
+                <span class="badge badge-pill badge-warning">MUI</span>
+                <span class="badge badge-pill badge-info">Redis</span>
+                <span class="badge badge-pill badge-dark">JSON</span>
+                <span class="badge badge-pill badge-secondary">Chart.jsx</span>
+                <span class="badge badge-pill badge-info">Haversine</span>
+                <span class="badge badge-pill badge-primary">Events</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

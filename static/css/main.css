@@ -1,41 +1,42 @@
-
-
 body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    text-transform: capitalize;
-    background-color: #ddd5fc !important;
+  margin: 0;
+  padding: auto;
+  padding-bottom: 40px;
+  font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
+  background-color: #ddd5fc !important;
 }
-#profile-wrapper{
-    text-align: center;
-}
-
-#profile-pic{
-    width:150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
+#profile-wrapper {
+  text-align: center;
 }
 
-.card{
-    border-radius: 8px;
-    background: #000;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 0 6px rgba(0,0,0,.15);
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    padding: 14px 80px 18px 36px;
-    cursor: pointer;
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card-img-top{
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
+.card {
+  border-radius: 8px;
+  /* background: #000; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.15);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
 }
 
-.card:hover{
-    transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* responsive */
@@ -44,28 +45,123 @@ body {
 
 // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .container{
-        background-color: #ddd5fc;
-    }
+  .container {
+    background-color: #ddd5fc;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .container{
-        background-color: #ddd5fc;
-    }
+  .container {
+    background-color: #ddd5fc;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .container{
-        background-color: #ddd5fc;
-    }
+  .container {
+    background-color: #ddd5fc;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .container{
-        background-color: #ddd5fc;
-    }
+  .container {
+    background-color: #ddd5fc;
+  }
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 5px;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+}
+
+.imgbox {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* static/css/styles.css */
+
+.card-header .btn-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.card-header .btn-link:hover {
+  text-decoration: underline;
+}
+
+.badge-pill {
+  margin-right: 5px;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+/* static/css/styles.css */
+
+body {
+    padding-top: 56px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h4 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    background-color: black;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
